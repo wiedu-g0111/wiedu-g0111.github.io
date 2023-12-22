@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snake Game</title>
+    <style>
+      #game-board {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        border: 1px solid black;
+        background: brown; /* Add this line */
+      }
+      .dot {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: #000;
+      }
+      .apple {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: #f00;
+      }
+      .head {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: green;
+      }
+
+      .body {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-board"></div>
+    <button onclick="startGame()">Start Game</button>
+    <script src="snake.js"></script>
+  </body>
+</html>
